@@ -12,7 +12,11 @@ import Products from "./products";
 
 interface RestaurantCategoriesProps {
   restaurant: Prisma.RestaurantGetPayload<{
-    include: { menuCategories: { include: { products: true } } };
+    include: {
+      menuCategories: {
+        include: { products: true };
+      };
+    };
   }>;
 }
 

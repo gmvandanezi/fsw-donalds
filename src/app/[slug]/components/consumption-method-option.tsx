@@ -15,8 +15,8 @@ interface ConsumptionMethodOptionProps {
 
 const ConsumptionMethodOption = ({
   slug,
-  imageUrl,
   imageAlt,
+  imageUrl,
   buttonText,
   option,
 }: ConsumptionMethodOptionProps) => {
@@ -25,10 +25,10 @@ const ConsumptionMethodOption = ({
       <CardContent className="flex flex-col items-center gap-8 py-8">
         <div className="relative h-[80px] w-[80px]">
           <Image
-            className="object-contain"
             src={imageUrl}
-            alt={imageAlt}
             fill
+            alt={imageAlt}
+            className="object-contain"
           />
         </div>
         <Button variant="secondary" className="rounded-full" asChild>
